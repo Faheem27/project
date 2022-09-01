@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:northern_hevean/views/screens/destinationDescription.dart';
+import 'package:northern_hevean/views/screens/detailScreen.dart';
 import 'package:northern_hevean/views/screens/hotelDescription.dart';
 import 'package:northern_hevean/views/screens/loginScreen.dart';
 import 'package:northern_hevean/views/screens/passengerScreen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
             const DestinationDescriptionPage(),
         '/travelAndRequirementsScreen': (_) =>
             const TravelAndRequirementsScreen(),
+        '/moreDetailScreen': (_) => const MoreDetailScreen(),
       },
     );
   }

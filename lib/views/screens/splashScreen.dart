@@ -9,7 +9,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 4), () async {
-      Navigator.pushReplacementNamed(context, '/dashboardScreen');
+      Navigator.pushReplacementNamed(context, '/cardPage');
     });
 
     return Scaffold(

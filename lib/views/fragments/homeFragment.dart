@@ -393,6 +393,13 @@ class _HomesFragmentState extends State<HomesFragment> {
                   ),
                   ListTile(
                     leading: const Icon(Icons.login_outlined),
+                    title: const Text('Card'),
+                    onTap: () {
+                      Navigator.popAndPushNamed(context, '/cardPage');
+                    },
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.login_outlined),
                     title: const Text('Login'),
                     onTap: () {
                       Navigator.popAndPushNamed(context, '/loginPage');

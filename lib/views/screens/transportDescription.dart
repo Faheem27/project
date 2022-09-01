@@ -62,6 +62,20 @@ class TransportTransportDescriptionPage
       children: [
         Text(args.desc,
             textAlign: TextAlign.left, style: const TextStyle(fontSize: 16.0)),
+        const SizedBox(
+          height: 10.0,
+        ),
+        FractionallySizedBox(
+            widthFactor: 1,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.green,
+              ),
+              onPressed: () {
+                Navigator.popAndPushNamed(context, '/moreDetailScreen');
+              },
+              child: const Text('More Detail'),
+            ))
       ],
     );
   }
